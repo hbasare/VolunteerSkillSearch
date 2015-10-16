@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
-
+    <title>Volunteer Skill Search</title>
     <!-- Bootstrap -->
     <link href="style/bootstrap.min.css" rel="stylesheet">
 
@@ -19,19 +18,71 @@
   </head>
   <body>
   	<div class="container-fluid">
-  		<h1>Hello, world!</h1>
+  		<div class="row">
+	  		<div class="col-sm-4"></div>
+	  		<div class="col-sm-4">
+	  			<h1>Login</h1><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	  		</div>
+	  		<div class="col-sm-4"></div>
+  		</div>
+  		
+	  	<form class="form-horizontal" role="form">
+		  	<div class="row">
+		  		<div class="col-sm-3"></div>
+		  		<div class="col-sm-1">
+		  			<div class="form-group">
+		    			<label class="control-label col-sm-2" for="email">Email:</label>
+		    		</div>
+		    	</div>
+		    	<div class="col-sm-6">
+		    		<div class="col-sm-10">
+			    		<input type="email" class="form-control" id="email" placeholder="Enter email"/>
+			    	</div>
+		    	</div>
+		    	<div class="col-sm-2"></div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-sm-3"></div>
+		    	<div class="col-sm-1">
+		    		<div class="form-group">
+		    			<label class="control-label col-sm-2" for="password">Password:</label>
+		    		</div>
+		    	</div>
+		    	<div class="col-sm-6">
+		    		<div class="col-sm-10">
+			    		<input type="password" class="form-control" id="password" placeholder="Enter password"/> 
+			    	</div>
+		    	</div>
+		    	<div class="col-sm-2"></div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-sm-4"></div>
+		    	<div class="col-sm-4">
+		    		<div class="form-group">
+			    		<div class="col-sm-offset-2 col-sm-10">
+			      			<div class="checkbox">
+			        			<label><input type="checkbox">Remember me</label>
+			      			</div>
+			    		</div>
+		    		</div>
+		    	</div>
+		    	<div class="col-sm-4"></div>
+		    </div>	
+		    <div class="row">	
+		    	<div class="col-sm-4"></div>
+			  	<div class="col-sm-4">
+			  		<div class="form-group">
+			    		<div class="col-sm-offset-2 col-sm-10">
+			      			<button type="submit" class="btn btn-default">Submit</button>
+			    		</div>
+			  		</div>
+			  	</div>
+			  	<div class="col-sm-4"></div>
+		  	</div>
+	    </form>
   	</div>
     
-    <form role="form">
-    	<div class="form-group">
-    		<label for="email">Email : </label>
-    		<input type="email" class="form-control" id="email" />
-    	</div>
-    	<div>
-    		<label for="password">Password : </label>
-    		<input type="password" class="form-control" id="password" /> 
-    	</div>
-    </form>
+    
 
 
 
