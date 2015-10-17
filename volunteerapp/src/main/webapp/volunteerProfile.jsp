@@ -31,7 +31,7 @@
 		  		<div class="col-sm-2"></div>
 		  		<div class="col-sm-2">
 		  			<div class="form-group">
-		    			<label class="control-label col-sm-12" for="firstname">First Name:</label>
+		    			<label class="control-label col-sm-12" for="firstname">First Name</label>
 		    		</div>
 		    	</div>
 		    	<div class="col-sm-6">
@@ -45,7 +45,7 @@
 		    	<div class="col-sm-2"></div>
 		    	<div class="col-sm-2">
 		    		<div class="form-group">
-		    			<label class="control-label col-sm-12" for="lastname">Last Name:</label>
+		    			<label class="control-label col-sm-12" for="lastname">Last Name</label>
 		    		</div>
 		    	</div>
 		    	<div class="col-sm-6">
@@ -56,10 +56,29 @@
 		    	<div class="col-sm-2"></div>
 		    </div>
 		    <div class="row">
+		    	<div class="col-sm-2"></div>
+		    	<div class="col-sm-2">
+		    		<div class="form-group">
+		    			<label class="control-label col-sm-12" for="gender">Gender</label>
+		    		</div>
+		    	</div>
+		    	<div class="col-sm-6">
+		    		<div class="col-sm-10">
+		    			<label class="radio-inline">
+      						<input type="radio" name="gender">Female
+    					</label>
+    					<label class="radio-inline">
+      						<input type="radio" name="gender">Male
+    					</label>
+		    		</div>
+		    	</div>
+		    	<div class="col-sm-2"></div>
+		    </div>
+		    <div class="row">
 		  		<div class="col-sm-2"></div>
 		  		<div class="col-sm-2">
 		  			<div class="form-group">
-		    			<label class="control-label col-sm-12" for="email">Email:</label>
+		    			<label class="control-label col-sm-12" for="email">Email</label>
 		    		</div>
 		    	</div>
 		    	<div class="col-sm-6">
@@ -70,10 +89,24 @@
 		    	<div class="col-sm-2"></div>
 		    </div>
 		    <div class="row">
+		  		<div class="col-sm-2"></div>
+		  		<div class="col-sm-2">
+		  			<div class="form-group">
+		    			<label class="control-label col-sm-12" for="password">Password</label>
+		    		</div>
+		    	</div>
+		    	<div class="col-sm-6">
+		    		<div class="col-sm-10">
+			    		<input type="email" class="form-control" id="password" placeholder="Enter password"/>
+			    	</div>
+		    	</div>
+		    	<div class="col-sm-2"></div>
+		    </div>
+		    <div class="row">
 		    	<div class="col-sm-2"></div>
 		    	<div class="col-sm-2">
 		    		<div class="form-group">
-		    			<label class="control-label col-sm-12" for="dob">Date of Birth:</label>
+		    			<label class="control-label col-sm-12" for="dob">Date of Birth</label>
 		    		</div>
 		    	</div>
 		    	<div class="col-sm-6">
@@ -87,7 +120,7 @@
 		    	<div class="col-sm-2"></div>
 		    	<div class="col-sm-2">
 		    		<div class="form-group">
-		    			<label class="control-label col-sm-12" for="address">Address:</label>
+		    			<label class="control-label col-sm-12" for="address">Address</label>
 		    		</div>
 		    	</div>
 		    	<div class="col-sm-6">
@@ -101,7 +134,35 @@
 		    	<div class="col-sm-2"></div>
 		    	<div class="col-sm-2">
 		    		<div class="form-group">
-		    			<label class="control-label col-sm-12" for="skills">Skill Sets:</label>
+		    			<label class="control-label col-sm-12" for="city">City</label>
+		    		</div>
+		    	</div>
+		    	<div class="col-sm-6">
+		    		<div class="col-sm-10">
+			    		<input type="text" class="form-control" id="city" placeholder="Enter City"></input> 
+			    	</div>
+		    	</div>
+		    	<div class="col-sm-2"></div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-sm-2"></div>
+		    	<div class="col-sm-2">
+		    		<div class="form-group">
+		    			<label class="control-label col-sm-12" for="postalcode">Postal Code</label>
+		    		</div>
+		    	</div>
+		    	<div class="col-sm-6">
+		    		<div class="col-sm-10">
+			    		<input type="text" class="form-control" id="postalcode" placeholder="Enter postal code"></input> 
+			    	</div>
+		    	</div>
+		    	<div class="col-sm-2"></div>
+		    </div>
+		    <div class="row">
+		    	<div class="col-sm-2"></div>
+		    	<div class="col-sm-2">
+		    		<div class="form-group">
+		    			<label class="control-label col-sm-12" for="skills">Skill Sets</label>
 		    		</div>
 		    	</div>
 		    	<div class="col-sm-6">
@@ -110,17 +171,18 @@
 			    	</div>
 		    	</div>
 		    	<div class="col-sm-2"></div>
-		    </div>
+		    </div><br />
 		    <div class="row">	
-		    	<div class="col-sm-4"></div>
-			  	<div class="col-sm-4">
+		    	<div class="col-sm-2"></div>
+		    	<div class="col-sm-2"></div>
+			  	<div class="col-sm-6">
 			  		<div class="form-group">
 			    		<div class="col-sm-offset-2 col-sm-10">
 			      			<button type="submit" class="btn btn-default">Save</button>
 			    		</div>
 			  		</div>
 			  	</div>
-			  	<div class="col-sm-4"></div>
+			  	<div class="col-sm-2"></div>
 		  	</div>
 	    </form>
   	</div>
