@@ -17,5 +17,16 @@
   </dependencies>
   <build>
     <finalName>volunteerapp</finalName>
+    <plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<configuration>
+					<url>http://localhost:8080/manager/text</url>
+					<server>mytomcat</server>
+					<path>/volunteerapp</path>
+				</configuration>
+			</plugin>
+			</plugins>
   </build>
 </project>

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Oct 18 19:36:39 ADT 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0150-7d18-f137-00000239a3a8 
+on database directory /home/blackmamba/git/VolunteerSkillSearch/volunteerapp/voludb with class loader sun.misc.Launcher$AppClassLoader@f186b8 
+Loaded from file:/home/blackmamba/git/VolunteerSkillSearch/volunteerapp/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_79-b14
+user.dir=/home/blackmamba/git/VolunteerSkillSearch/volunteerapp
+os.name=Linux
+os.arch=i386
+os.version=3.13.0-65-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
