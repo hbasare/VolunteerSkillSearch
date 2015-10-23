@@ -21,7 +21,7 @@
   		<div class="row">
 	  		<div class="col-sm-4"></div>
 	  		<div class="col-sm-4">
-	  			<h1>Volunteer Profile</h1><br/><br/><br/>
+	  			<h1>Volunteer Registration</h1><br/><br/><br/>
 	  		</div>
 	  		<div class="col-sm-4"></div>
   		</div>
@@ -52,25 +52,6 @@
 		    		<div class="col-sm-10">
 			    		<input type="text" class="form-control" id="lastname" placeholder="Enter last name"/> 
 			    	</div>
-		    	</div>
-		    	<div class="col-sm-2"></div>
-		    </div>
-		    <div class="row">
-		    	<div class="col-sm-2"></div>
-		    	<div class="col-sm-2">
-		    		<div class="form-group">
-		    			<label class="control-label col-sm-12" for="gender">Gender</label>
-		    		</div>
-		    	</div>
-		    	<div class="col-sm-6">
-		    		<div class="col-sm-10">
-		    			<label class="radio-inline">
-      						<input type="radio" name="gender">Female
-    					</label>
-    					<label class="radio-inline">
-      						<input type="radio" name="gender">Male
-    					</label>
-		    		</div>
 		    	</div>
 		    	<div class="col-sm-2"></div>
 		    </div>
@@ -106,93 +87,23 @@
 		  		<div class="col-sm-2"></div>
 		  		<div class="col-sm-2">
 		  			<div class="form-group">
-		    			<label class="control-label col-sm-12" for="phone">Phone Number</label>
+		    			<label class="control-label col-sm-12" for="re-password">Re-Enter Password</label>
 		    		</div>
 		    	</div>
 		    	<div class="col-sm-6">
 		    		<div class="col-sm-10">
-			    		<input type="text" class="form-control bfh-phone" data-format="(ddd) ddd-dddd" id="phone" placeholder="Enter phone number"/>
+			    		<input type="email" class="form-control" id="re-password" placeholder="Re-enter password"/>
 			    	</div>
 		    	</div>
 		    	<div class="col-sm-2"></div>
 		    </div>
-		    <div class="row">
-		    	<div class="col-sm-2"></div>
-		    	<div class="col-sm-2">
-		    		<div class="form-group">
-		    			<label class="control-label col-sm-12" for="dob">Date of Birth</label>
-		    		</div>
-		    	</div>
-		    	<div class="col-sm-6">
-		    		<div class="col-sm-10">
-			    		<input type="date" class="form-control" id="dob" placeholder="Enter DOB"/> 
-			    	</div>
-		    	</div>
-		    	<div class="col-sm-2"></div>
-		    </div>
-		    <div class="row">
-		    	<div class="col-sm-2"></div>
-		    	<div class="col-sm-2">
-		    		<div class="form-group">
-		    			<label class="control-label col-sm-12" for="address">Address</label>
-		    		</div>
-		    	</div>
-		    	<div class="col-sm-6">
-		    		<div class="col-sm-10">
-			    		<input type="text" class="form-control" id="address" placeholder="Enter Address"/> 
-			    	</div>
-		    	</div>
-		    	<div class="col-sm-2"></div>
-		    </div>
-		    <div class="row">
-		    	<div class="col-sm-2"></div>
-		    	<div class="col-sm-2">
-		    		<div class="form-group">
-		    			<label class="control-label col-sm-12" for="city">City</label>
-		    		</div>
-		    	</div>
-		    	<div class="col-sm-6">
-		    		<div class="col-sm-10">
-			    		<input type="text" class="form-control" id="city" placeholder="Enter City"></input> 
-			    	</div>
-		    	</div>
-		    	<div class="col-sm-2"></div>
-		    </div>
-		    <div class="row">
-		    	<div class="col-sm-2"></div>
-		    	<div class="col-sm-2">
-		    		<div class="form-group">
-		    			<label class="control-label col-sm-12" for="postalcode">Postal Code</label>
-		    		</div>
-		    	</div>
-		    	<div class="col-sm-6">
-		    		<div class="col-sm-10">
-			    		<input type="text" class="form-control" id="postalcode" placeholder="Enter postal code"></input> 
-			    	</div>
-		    	</div>
-		    	<div class="col-sm-2"></div>
-		    </div>
-		    <div class="row">
-		    	<div class="col-sm-2"></div>
-		    	<div class="col-sm-2">
-		    		<div class="form-group">
-		    			<label class="control-label col-sm-12" for="skills">Skill Sets</label>
-		    		</div>
-		    	</div>
-		    	<div class="col-sm-6">
-		    		<div class="col-sm-10">
-			    		<textarea class="form-control" id="skills" placeholder="Enter Skill sets and experience"></textarea> 
-			    	</div>
-		    	</div>
-		    	<div class="col-sm-2"></div>
-		    </div><br />
 		    <div class="row">	
 		    	<div class="col-sm-2"></div>
 		    	<div class="col-sm-2"></div>
 			  	<div class="col-sm-6">
 			  		<div class="form-group">
 			    		<div class="col-sm-offset-2 col-sm-10">
-			      			<button type="submit" class="btn btn-default">Save</button>
+			      			<button type="submit" class="btn btn-default">Register</button>
 			    		</div>
 			  		</div>
 			  	</div>
