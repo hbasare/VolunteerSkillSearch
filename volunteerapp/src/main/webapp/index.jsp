@@ -27,16 +27,23 @@
   		</div>
   		
 	  	<form class="form-horizontal" role="form">
+	  	<div class="dropdown pull-right">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pick your user type here to login (Admin or Volunteer) <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        <li><a href="#">Administration</a></li>
+        <li><a href="#">Volunteer</a></li>
+    </ul>
+</div>
 		  	<div class="row">
 		  		<div class="col-sm-3"></div>
 		  		<div class="col-sm-1">
 		  			<div class="form-group">
-		    			<label class="control-label col-sm-2" for="email">Email:</label>
+		    			<label class="control-label col-sm-2" for="username">Username:</label>
 		    		</div>
 		    	</div>
 		    	<div class="col-sm-6">
 		    		<div class="col-sm-10">
-			    		<input type="email" class="form-control" id="email" placeholder="Enter email"/>
+			    		<input type="text" class="form-control" id="username" placeholder="Enter username"/>
 			    	</div>
 		    	</div>
 		    	<div class="col-sm-2"></div>
