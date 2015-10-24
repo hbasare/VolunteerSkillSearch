@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -25,20 +26,20 @@ public class CreateDB {
 				+ "companyname varchar(50), "
 				+ "phonenumber varchar(50), "
 				+ "email varchar(50), "
-				+ "username varchar(50), "
 				+ "password varchar(50),"
 				+ "CONSTRAINT primary_key_adminusers PRIMARY KEY (id))");
-		connection.createStatement().execute("insert into adminusers(firstname,lastname,companyname,phonenumber,email,username,password) values "+
-										     "('john','doe','company1','555-555-5555','admin1@company1.com','admin1','1234'),"+
-											 "('jane','doe','company2','555-666-6666','admin2@company2.com','admin2','1234')");
+		connection.createStatement().execute("insert into adminusers(firstname,lastname,companyname,phonenumber,email,password) values "+
+										     "('john','doe','company1','555-555-5555','admin1@voludb.com','1234'),"+
+											 "('jane','doe','company2','555-666-6666','admin2@voludb.com','1234'),"+
+											 "('temp','doe','company3','555-777-7777','admin3@voludb.com','1234')");
 		System.out.println("adminusers table created and records sucessfully inserted.");
 
-		
+		if (connection !=null) connection.close();
 		
 	}
 	
 	public void createVolunteerUsers(String filename) throws ClassNotFoundException, SQLException, IOException   {
-		String insertStatement="insert into volunteerusers(firstname,lastname,gender,dob,email,phone,address,city,province,language1,language2,skillset,username,password) values ";
+		String insertStatement="insert into volunteerusers(firstname,lastname,gender,dob,email,phone,address,city,province,language1,language2,skillset,password) values ";
 		File f=new File(filename);
 		FileReader fr=new FileReader(f);
 		BufferedReader br=new BufferedReader(fr);
@@ -77,22 +78,24 @@ public class CreateDB {
 				+ "language1 varchar(50), "
 				+ "language2 varchar(50), "
 				+ "skillset varchar(50), "
-				+ "username varchar(50), "
 				+ "password varchar(50),"
 				+ "CONSTRAINT primary_key_volunteerusers PRIMARY KEY (id))");
 		
 		connection.createStatement().execute(insertStatement);
 		System.out.println("volunteerusers table created and records sucessfully inserted.");
 
-		
+		if (connection !=null) connection.close();
 		
 	}
 	
 	public static void main(String[] args) throws IOException  {
 		CreateDB cb=new CreateDB();
 		try {
-			//cb.createAdminUsers();
-			cb.createVolunteerUsers("/../../../../../lib/RAW_MOCK_DATA.csv");
+			cb.createAdminUsers();
+			//File currentDirFile = new File(".");
+			//String helper = currentDirFile.getAbsolutePath();
+			//System.out.println(currentDir);
+			cb.createVolunteerUsers("./lib/RAW_MOCK_DATA.csv");//"../../../../../lib/RAW_MOCK_DATA.csv");
 			
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
