@@ -9,6 +9,7 @@ import java.sql.ResultSetMetaData;
 
 public class QueryDB {
 	public static final String GET_ALL_ADMINUSERS = "select * from adminusers";
+	public static final String GET_ALL_VOLUNTEERUSERS = "select * from volunteerusers";
 	
 	public void connectAndExecute(String SQL_Statement) throws SQLException{
 		Connection connection = DriverManager.getConnection(CreateDB.JDBC_URL);
@@ -33,6 +34,7 @@ public class QueryDB {
 		QueryDB qdb=new QueryDB();
 		try {
 			qdb.connectAndExecute(GET_ALL_ADMINUSERS);
+			qdb.connectAndExecute(GET_ALL_VOLUNTEERUSERS);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

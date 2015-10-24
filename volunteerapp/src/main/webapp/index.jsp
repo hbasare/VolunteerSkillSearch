@@ -27,14 +27,15 @@
   		</div>
   		
 	  	<form class="form-horizontal" role="form">
-	  	<div class="dropdown pull-right">
+
+		  	<div class="row">
+		  		  	<div class="dropdown pull-right">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pick your user type here to login (Admin or Volunteer) <b class="caret"></b></a>
     <ul class="dropdown-menu">
         <li><a href="#">Administration</a></li>
         <li><a href="#">Volunteer</a></li>
     </ul>
 </div>
-		  	<div class="row">
 		  		<div class="col-sm-3"></div>
 		  		<div class="col-sm-1">
 		  			<div class="form-group">
